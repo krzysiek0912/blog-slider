@@ -1,0 +1,68 @@
+.btn-main {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+  @extend %colortransition;
+
+  &:not(.no-hover):hover {
+    color: #ffffff !important;
+    background-color: $primary;
+    text-decoration: none;
+  }
+}
+
+.btn-main-small {
+  @extend .btn-main;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #2a2a2a;
+  color: #2a2a2a;
+  font-size: 13px;
+  line-height: 22px;
+  @extend %colortransition;
+
+  &:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+  }
+}
+
+.btn-on-slider {
+  @extend .btn-outline;
+  border: 1px solid $black;
+  color: $black;
+
+  &:hover {
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: transparent;
+  }
+}
+
+.btn-on-photo {
+  text-transform: uppercase;
+  width: 135px;
+  height: 55px;
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  background-color: $on-photo-btn-bg-color;
+  font-size: 14px;
+  font-weight: 500;
+  @extend %colortransition;
+
+  &:hover {
+    border: 1px solid $primary;
+    background-color: $primary;
+  }
+}

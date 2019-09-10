@@ -1,0 +1,233 @@
+.section--hotdeals {
+  .panel-bar {
+    margin-bottom: 0;
+    height: auto;
+    justify-content: space-between;
+    background-color: $black;
+    color: $white;
+    align-items: center;
+    display: flex;
+
+    h4 {
+      margin: 18px 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .dots ul {
+    background-color: transparent;
+    transform: none;
+  }
+
+  .hotdeals-box {
+    width: 100%;
+  }
+
+  main {
+    border: 1px solid $box-border-color;
+    border-top: 0;
+  }
+
+  .photo {
+    min-height: 290px;
+    justify-content: center;
+    display: flex;
+
+    img {
+      width: auto;
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      .buttons,
+      .time {
+        opacity: 1;
+      }
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .time {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    list-style: none;
+    opacity: 0;
+    display: flex;
+
+    li {
+      font-size: 13px;
+      background: #3e3e3e;
+      margin: 0 5px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      line-height: 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .content h5 {
+    color: $black;
+  }
+
+  .slider {
+    > div {
+      height: 100%;
+      position: relative;
+    }
+
+    .slider--slide {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    .slider--hero {
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba($color: $black, $alpha: 0.5);
+      position: relative;
+
+      .slider--title {
+        font-size: 54px;
+        font-weight: normal;
+      }
+
+      .slider--desc {
+        font-size: 24px;
+      }
+
+      .btn {
+        background-color: $white;
+        color: $black;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        margin-left: -55px;
+      }
+    }
+
+    .slider--nav {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      .btn {
+        color: $white;
+        width: 50%;
+        border-radius: 0;
+        background-color: $black;
+
+        &:hover {
+          background-color: $primary;
+        }
+      }
+      > div {
+        height: 100%;
+        position: relative;
+      }
+
+      .slider--slide {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+
+      .slider--hero {
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        width: 100%;
+        padding: 20px;
+        background-color: rgba($color: $black, $alpha: 0.5);
+        position: relative;
+
+        .slider--title {
+          font-size: 54px;
+          font-weight: normal;
+        }
+
+        .slider--desc {
+          font-size: 24px;
+        }
+
+        .btn {
+          background-color: $white;
+          color: $black;
+          position: absolute;
+          bottom: -20px;
+          left: 50%;
+          margin-left: -55px;
+        }
+      }
+
+      .slider--nav {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .btn {
+          color: $white;
+          width: 50%;
+          border-radius: 0;
+          background-color: $black;
+
+          &:hover {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

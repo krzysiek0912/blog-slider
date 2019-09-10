@@ -1,0 +1,52 @@
+.section--feedback {
+  padding: 4rem 0;
+  text-align: center;
+
+  .row {
+    justify-content: center;
+  }
+
+  .fa-quote-right {
+    font-size: 24px;
+    color: $black;
+  }
+
+  .quotes {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  blockquote {
+    font-size: 14px;
+    line-height: 24px;
+    color: #676767;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 5px;
+      max-width: 60px;
+    }
+
+    .quote--author {
+      padding-left: 15px;
+
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      h6 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+}

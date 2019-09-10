@@ -1,0 +1,44 @@
+.section--brands {
+  margin: 2rem auto;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 25px 0;
+  .brands-slider {
+    position: relative;
+    padding: 0 45px;
+
+    .tns-carousel {
+      margin: 0;
+    }
+
+    .tns-item img {
+      max-width: 100%;
+    }
+  }
+
+  .row {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .btn {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 100%;
+    background-color: $black;
+    color: $white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+
+    &.btn-prev {
+      left: 0;
+    }
+
+    &.btn-next {
+      right: 0;
+    }
+  }
+}
